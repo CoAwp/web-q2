@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e8e8e8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .inputSection {
+    display: block !important;
+  }
+
+  .inputSection input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding : 0px;
+  }
+
+  .inputSection input:hover {
+    width: 100%;
+    padding : 0px;
+  }
+
+  .inputSection button {
+    min-width: 100%;
+    padding : 0px;
+  }
+
+  .inputSection button:hover {
+    width: 100%;
+    padding : 0px;
+  }
+
+  td { 
+    height: fit-content;
+		display: block;
+	}
+
+  tr{
+    margin:0px;
+    padding: 0px;
+  }
+
+  .tableElement {
+    width: 100%;
+    border-spacing: 0px;
+    animation: fadeIn 1.5s;
+    border-collapse: collapse;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    padding: 2rem;
+    background-color: orange;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 50%;
+    padding: 2rem;
+    background-color: rgb(255, 255, 74);
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 50%;
+    max-width: 1000px;
+    padding: 2rem;
+  }
+}
+
+.inputSection {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0rem;
+  padding: 0rem 1rem;
+}
+
+.inputSection input {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  border-width: 0px;
+  background-color: #e8e8e8;
+  box-shadow: 0px 4px 4px 0px rgb(183, 183, 183),
+    0px -2px 4px 0px rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+}
+
+.inputSection input:hover {
+  width: 100%;
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+  background-color: #ececec;
+  padding-left: 10px;
+  box-shadow: 0px 6px 8px 2px rgb(183, 183, 183),
+    0px -6px 10px 5px rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+}
+
+.inputSection button {
+  width: 40%;
+  height: 32px;
+  border-radius: 20px;
+  border-width: 0px;
+  background-color: #4abadc;
+  box-shadow: 0px 4px 4px 0px rgb(183, 183, 183),
+    0px -2px 4px 0px rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+}
+
+.inputSection button:hover {
+  width: 40%;
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+  background-color: #6accea;
+  box-shadow: 0px 6px 8px 2px rgb(183, 183, 183),
+    0px -6px 10px 5px rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+}
+
+.inputSection button:active {
+  width: 40%;
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+  background-color: #48b9db;
+  box-shadow: 0px 2px 4px 2px rgb(183, 183, 183),
+    0px -2px 5px 2px rgb(255, 255, 255), inset 0px 2px 5px 5px #53a2ba;
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+}
+
+.searchIcon {
+  border-radius: 20px;
+  border-width: 0px;
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+  padding-top: 4px;
+  margin: auto;
+}
+
+.searchIcon :hover {
+  transition: 0.5s box-shadow, 0.5s background-color, 0.5s padding;
+  padding: 1px 4px 1px 10px;
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: none;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0px 4px 4px 0px rgb(183, 183, 183),
+      0px -2px 4px 0px rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+  }
+}
+
+.tableElement {
+  width: 100%;
+  table-layout: fixed;
+  box-shadow: none;
+  border-spacing: 10px;
+  animation: fadeIn 1.5s;
+}
+
+.tableElement tbody tr {
+  height: 50px;
+}
+
+.tableElement tbody tr td {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  box-shadow: 0px 4px 4px 0px rgb(183, 183, 183),
+    0px -2px 4px 0px rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgb(183, 183, 183), 0px -0.5px rgb(255, 255, 255);
+  animation: fadeIn 1.5s;
+  overflow: hidden;
+}
+
+.tableElement tbody > tr td:hover {
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #91cee1;
+  box-shadow: 0px 4px 4px 2px rgb(183, 183, 183),
+    0px -4px 4px 2px rgb(255, 255, 255);
+  transition: all 0.5s ease;
+}
